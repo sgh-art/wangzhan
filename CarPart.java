@@ -1,9 +1,11 @@
 package com.car.parts.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+@Data
 @Entity
 @Table(name = "car_part")
 public class CarPart {
@@ -30,8 +32,4 @@ public class CarPart {
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
-
-    // Getters and setters (如果没用 Lombok 则需要手动添加)
-    // 如果你使用了 Lombok，可以加上 @Data 注解，然后删除下面的 getter/setter
-    // 但注意：Lombok 也需要依赖，并且需要安装插件
 }

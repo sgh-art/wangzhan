@@ -1,8 +1,7 @@
-package com.car.parts.service.impl;
+package com.car.parts.service;
 
 import com.car.parts.entity.CarPart;
 import com.car.parts.repository.CarPartRepository;
-import com.car.parts.service.CarPartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
